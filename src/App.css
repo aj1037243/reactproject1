@@ -1,5 +1,201 @@
-.App {
+.tint{
+  background-color:#C3073F;
+  margin: 0;
+}
+
+nav{
+
+  display: flex;
+  background-color:#C3073F;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+}
+
+.nav-links{
+
+  display: flex;
+  list-style: none;
+
+}
+
+
+.nav-items a{
+
+  margin-right: 2rem;  
+
+  text-decoration: none;
+  
+  color: white;
+
+}
+
+
+.nav-items:hover{
+
+  background-color: white;
+
+
+}
+
+.nav-items:hover a {
+  
+  color: black;
+
+}
+
+.alone{
+
   text-align: center;
+  background-color: #4E4E50;
+}
+.homeheading{
+
+  background-image:url(../src/Images/19fb_sanford_02.jpg);
+
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+
+
+}
+
+.contentOne h2{
+  text-align: center;
+
+}
+
+.doubleColoumn{
+
+
+  display: grid;
+  
+  margin: 0 auto;
+    
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  
+  grid-gap: 1em;
+  
+  text-align: center;
+  
+}
+
+footer{
+
+  text-align: center;
+}
+
+.homeheading h1{
+
+  color:red;
+  text-align: center;
+}
+
+.homeheading p{
+  text-align: center;
+  color: red; 
+}
+
+.contributors h3{
+
+  text-align: center;
+}
+
+.sections{
+
+  display: grid;
+  
+  margin: 0 auto;
+    
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  
+  grid-gap: 1em;
+  
+  text-align: center;
+  
+  
+ 
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.button-section {
+  margin: 3%;
+}
+.button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: royalblue;
+}
+
+.remove {
+  background-color: rgb(192, 53, 53);
+}
+.remove:hover {
+  background-color: rgb(187, 43, 43);
+}
+
+
+.App {
+
+  margin: 0;
+  background-color: #4E4E50;
 }
 
 .App-logo {
