@@ -9,12 +9,10 @@ function Home() {
      <Header/>
 
      <div className='alone'>
-
-     <h1> Welcome to our Home Page</h1>
-
+     <h1> Welcome to Athens Tourism</h1>
      </div>
-        <div className='homeheading'> 
         
+        <div className='homeheading'> 
         </div>
 
 
