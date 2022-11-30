@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+import Axios from 'axios';
 import MainNavigation from './components/MainNavigation';
 import Main from './components/Main';
 import Home from './components/Home';
@@ -9,7 +11,6 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import SignUp from './components/Login';
 import Footer from './components/Footer';
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 let isLoggedIn = false;
@@ -17,6 +18,11 @@ let routes;
 
 const App = () => {
     
+    
+
+    
+
+
     if (isLoggedIn) {
         routes = (
             <Routes>
