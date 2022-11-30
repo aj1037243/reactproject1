@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
+import {useState} from 'react';
 import axios from "axios";
+import '../css/UserInputContent.css'
 
 function UserInputContent() {
     const[input, setInput] = useState({
@@ -30,37 +32,32 @@ function UserInputContent() {
             address: input.address
         }
         console.log(newContent);
-        //post content to express server working as of 11/28/2022
+        //post content to express server working as of 11/29/2022 posts content to test.content        
         axios.post('http://localhost:3001/postContent', newContent)
-        .then(function(response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+        //then.((response) => console.log(response))
+        .catch((error) => console.log(error))
     }   
     
 
 
 //Create the html to insert userContent:
-
     return ( 
     <div className='container'>
         <h1>Create Tourist Location</h1>
     <form>
         <div className="">
-            <input onChange={handleChange} className="" name="title" value={input.title} autoComplete="off" placeholder="Tourist Title"></input>    
+            <input type="text" onChange={handleChange} name="title" value={input.title} autoComplete="off" placeholder="Location's Name"></input>    
         </div>
         <div className="">
-            <textarea onChange={handleChange} className="" name="description" value={input.description} autoComplete="off" placeholder="Tourist description"></textarea>    
+            <input type="text" onChange={handleChange} name="description" value={input.description} autoComplete="off" placeholder="Location's description"></input>    
         </div>
         <div className="">
-            <input onChange={handleChange} className="" name="pictureURL" value={input.pictureURL} autoComplete="off" placeholder="PictureURL"></input>    
+            <input type="text" onChange={handleChange} name="pictureURL" value={input.pictureURL} autoComplete="off" placeholder="Location's PictureURL"></input>    
         </div>
         <div className="">
-            <input onChange={handleChange} className="" name="address" value={input.address} autoComplete="off" placeholder="Address"></input>    
+            <input type="text" onChange={handleChange} name="address" value={input.address} autoComplete="off" placeholder="Location's Address"></input>    
         </div>
-        <button onClick={handleClick} className="">Add Location</button>
+        <button onClick={handleClick}>Add Location</button>
     </form>
    </div>
     )
